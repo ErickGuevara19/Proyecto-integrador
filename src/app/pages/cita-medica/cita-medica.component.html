@@ -1,1 +1,62 @@
-<p>cita-medica works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cita-medica.component.css">
+    <title>Document</title>
+</head>
+<body>
+<form class="formulario">
+
+    <h1>Registro de Citas medicas </h1>
+    <fieldset class = "Datos">
+        <legend>Datos Personales:</legend>
+        <label for="fname">Nombres y Apellidos:</label><br>
+        <input type="text" id="fname" name="fname" ><br>
+        <label for="identification">Identificacion:</label><br>
+        <input type="text" id="identification" name="identification" ><br><br>
+        <label for="identification">Discapacidad:</label><br>
+        <input type="radio" id="si" name="fav_language" value="si">
+        <label for="si">si</label><br>
+        <input type="radio" id="no" name="fav_language" value="no">
+        <label for="no">no</label><br>
+      </fieldset>
+      <fieldset class = "especialidad">
+          <legend>Especialidad:</legend>
+          <label for="especialidad" class="form-label">Especialidad</label>
+                  <select class="form-select form-select-sm" name="especialidad" id="especialidad">
+                    <option selected>Selecione uno </option>
+                    <option value=""></option>
+                    <option value="">Medicina General</option>
+                    <option value="">Odontologia</option>
+                    <option value="">Obstetricia</option>
+                    <option value="">Traumatologia</option>
+                    <option value="">Pediatria</option>
+                  </select>
+        </fieldset>
+        <fieldset class = "establecimiento">
+          <legend>Establecimiento:</legend>
+          <label for="establecimiento" class="form-label">Establecimiento</label>
+              <select class="form-select form-select-sm" name="establecimiento" id="establecimiento">
+                <option selected>Selecione uno </option>
+                <option value=""></option>
+                <option value="">San Bartolo</option>
+                <option value="">Eugenio Espejo</option>
+                <option value="">Carlos Sndrade Marin</option>
+                <option value="">Enrique Garces</option>
+                <option value="">Jerusalena</option>
+              </select>
+        </fieldset>
+        <fieldset class = "fecha">
+          <legend>Fecha:</legend>
+              <label class="fw-semibold" for="data">Fecha:</label>
+              <input class="form-control my-3" type="date" id="data" name="data"/>
+        </fieldset>
+        <div class="input-contenedor">
+             <input type="submit" value="Guardar Cita" class="button">
+         </div>
+</form>
+</body>
+</html>

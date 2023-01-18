@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   background: bisque;
+    background-size: cover;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: rgba(12, 123, 214, 0.76);
+    margin-top: 150px;
+    padding: 3px;
+}
+h1{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.button{
+    border: none;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.116);
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+.Datos{
+    color: black;
+    background-color: rgba(165, 42, 42, 0.384);
+}
+.especialidad{
+    background-color: rgba(165, 147, 42, 0.384);
+
+
+}
+.establecimiento{
+    background-color: rgba(42, 140, 165, 0.384);
+
+
+}
+.fecha{
+    background-color: rgba(119, 113, 113, 0.384);
+}
